@@ -13,6 +13,7 @@ export default function VitePluginDeployCheck(
     name: 'vite-plugin-deploy-check',
     apply: 'build',
     enforce: 'post',
+    // resolve阶段暂存config
     configResolved(_config) {
       config = _config
     },
